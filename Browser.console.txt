@@ -1,0 +1,19 @@
+
+If you have placed debugger in the JS file then refresh the page loaded in the browser then only the execution of page gets stopped at the debugging point.
+
+this.getOwnerComponent() : Means to fetch manifest.json file (manifest.json file contains Global Configuration of Application : For ex. libraries, models)
+
+this.getOwnerComponent().getModel("i18n") : To get model from manifest.json file
+
+this.getOwnerComponent().getModel("i18n").getResourceBundle() : To get the resource file (For ex. i18n.properties is a resourcebundle file (i18n.properties), specified with bundleName in manifest.json file)
+
+this.getOwnerComponent().getModel("i18n").getResourceBundle().getText("title") : To get the value of the property title from the resourcebundle file (i18n.properties)
+
+navigator.language : To get the language set in the browser
+
+// Code to set the browser language to spanish
+var i18nes = this.getOwnerComponent().getModel("i18n_es")
+this.getOwnerComponent().setModel(i18nes,"i18n") // The second parameter is the name of the variable used in Views / Fragments (MoreDetails.fragment.xml) for binding
+
+// Use Shift + Enter to enter the second line and then after press Enter key to execute the JS code.
+
