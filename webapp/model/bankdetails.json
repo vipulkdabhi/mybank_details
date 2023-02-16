@@ -1,0 +1,45 @@
+{
+
+    "AccDetails": {
+        "AccountNumber" : "384521*****",
+            "AccountHolderName" : "Vipul Dabhi",
+                "IFSCNumber" : "BARC0COL",
+                    "CustomerId" : "12345678",
+                        "Address" : {
+            "city": "Ahmedabad",
+                "postalcode" : "387001",
+                    "housenumber" : "001",
+                        "street" : "Wall Street",
+                            "state": "Gujarat"
+        }
+    },
+    "carddetails": [
+        {
+            "cardtype": "Credit Card",
+            "cardnumber": "01928764789686",
+            "cardcompany": "Master Card",
+            "assigneddate": "Assigned on 13th Aug 2018",
+            "state": true
+
+        },
+        {
+            "cardtype": "Debit Card",
+            "cardnumber": "23548943113674",
+            "cardcompany": "Visa Card",
+            "assigneddate": "Assigned on 23th Jun 2022",
+            "state": false
+        },
+        {
+            "cardtype": "Credit Card",
+            "cardnumber": "789231466473012",
+            "cardcompany": "Master Card",
+            "assigneddate": "Assigned on 3th Aug 2023",
+            "state": true
+
+        }
+
+    ]
+
+
+
+}
