@@ -1,57 +1,19 @@
 <mvc:View controllerName="com.sap.mybankdetails.controller.App"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m"
-    xmlns:core="sap.ui.core">
+    xmlns:core="sap.ui.core" class="sapuiSizeCompact">
     <App id="app">
         <Page id="page" title="{i18n>appTitle}">
             <headerContent>
                 <Button id="refresh" type="Emphasized" text="{i18n>refreshBtn}"></Button>
             </headerContent>
             <content>
-            
-                        
-			            
-                        <core:Fragment id="bankdetailsfragment" fragmentName="com.sap.mybankdetails.view.fragments.BankDetails" type="XML" />
-                        <Panel id="pCards" expandable="true" headerText="Card Details" width="auto" class="sapUiResponsiveMargin">
-		                    <content>
-			                    <List
-                                    id="myList"                                                                      
-                                    items="" width="50%">
-                                    <items>
-                                        <StandardListItem id="card1"
-                                            title="Master Card (1234567891)"
-                                            description="Debit card: Assigned on 17 Aug 2022"
-                                            icon="sap-icon://credit-card"
-                                            iconInset="false"
-                                            highlight="Information"
-                                            info="Active"
-                                            infoState="Information"
-                                            infoStateInverted="true" />
 
-                                            <StandardListItem id="card2"
-                                            title="Visa (9876543210)"
-                                            description="Credit card: Assigned on 13 Jan 2023"
-                                            icon="sap-icon://credit-card"
-                                            iconInset="false"
-                                            highlight="Success"
-                                            info="Active"
-                                            infoState="Success"
-                                            infoStateInverted="true" />
 
-                                            <StandardListItem id="card3"
-                                            title="Master Card (1234567891)"
-                                            description="Debit card: Assigned on 23 Feb 2012"
-                                            icon="sap-icon://credit-card"
-                                            iconInset="false"
-                                            highlight="Error"
-                                            info="Expired"
-                                            infoState="Error"
-                                            infoStateInverted="true" />
-                                    </items>
-                                </List>
-		                    </content>
-	</Panel>
-               
+
+                <core:Fragment id="bankdetailsfragment" fragmentName="com.sap.mybankdetails.view.fragments.BankDetails" type="XML" />
+                <core:Fragment id="carddetailsfragment" fragmentName="com.sap.mybankdetails.view.fragments.CardDetails" type="XML"/>
+
 
             </content>
 
